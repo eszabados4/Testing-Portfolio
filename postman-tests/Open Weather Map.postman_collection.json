@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "02a825ec-c626-4ee4-ad64-4f0b75d9335a",
+		"name": "Open Weather Map",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24111186"
+	},
+	"item": [
+		{
+			"name": "API-01 Successful request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Szeged&units=metric&appid=262b895f5f2401c4ade5bebf390f3bb0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Szeged"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "262b895f5f2401c4ade5bebf390f3bb0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API-02 Incorrect City name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Szegd&units=metric&appid=262b895f5f2401c4ade5bebf390f3bb0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Szegd"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "262b895f5f2401c4ade5bebf390f3bb0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API-03 Check Temperature range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Szeged&units=metric&appid=262b895f5f2401c4ade5bebf390f3bb0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Szeged"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "262b895f5f2401c4ade5bebf390f3bb0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API-04 Missing API Key",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Szeged&units=metric",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Szeged"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
